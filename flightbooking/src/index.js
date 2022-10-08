@@ -8,11 +8,13 @@ import reportWebVitals from "./reportWebVitals";
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);root.render(
+  <ChakraProvider>
     <BrowserRouter>
       <UserProvider>
         <App />
       </UserProvider>
     </BrowserRouter>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
