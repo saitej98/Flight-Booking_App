@@ -6,15 +6,13 @@ import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./Components/Context/User";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <ChakraProvider>
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);root.render(
     <BrowserRouter>
       <UserProvider>
         <App />
       </UserProvider>
     </BrowserRouter>
-  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

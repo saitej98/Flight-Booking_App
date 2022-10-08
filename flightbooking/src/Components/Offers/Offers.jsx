@@ -12,7 +12,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-function Offers() {
+function Offers({setOffer}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
